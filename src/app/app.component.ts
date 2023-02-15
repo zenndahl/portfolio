@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'prj-start';
+  loadedPage = 'app';
+
+  onNavigate(page: string){
+    this.loadedPage = page;
+  }
 }
