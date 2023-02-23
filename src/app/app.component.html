@@ -1,11 +1,13 @@
 <app-header (page)="onNavigate($event)"></app-header>
-<div class="container-fluid">
-  <div class="row">
-      <div class="col-md-12">
-          <app-about *ngIf="loadedPage === 'about'"></app-about>
-          <app-projects *ngIf="loadedPage === 'projects'"></app-projects>
-      </div>
-    </div>
-</div>
 
-<app-footer class="d-flex flex-column min-vh-100"></app-footer>
+<div class="container main-content">
+  <div class="flex-row">
+    <div class="col-md-12">
+      <app-about *ngIf="loadedPage === 'about'"></app-about>
+      <app-projects *ngIf="loadedPage === 'projects'"></app-projects>
+      <app-home *ngIf="loadedPage === 'app'"></app-home>
+    </div>
+  </div>
+</div>
+    
+<app-footer class="d-flex flex-column"></app-footer>

@@ -1,3 +1,8 @@
 footer{
     width: 100%;
+    margin-top: 27vh;
+}
+
+a:hover{
+    color: orange;
 }
